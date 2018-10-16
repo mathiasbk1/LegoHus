@@ -24,7 +24,6 @@ public class ShowAllOrders extends Command {
     @Override
     String execute(HttpServletRequest request, HttpServletResponse response) throws GeneralException {
         ArrayList<User> list = LogicFacade.getAllUsers();
-        System.out.println("list size------------"+list.size());
         request.getSession().setAttribute("userList", list);
         return "showAllOrders";
     }

@@ -26,12 +26,8 @@ public class MakeOrder extends Command {
         String length = (String) request.getParameter("length");
         String width = (String) request.getParameter("width");
         String height = (String) request.getParameter("height");
-        System.out.println("length = "+length);
-        System.out.println(height);
-        System.out.println(width);
 //        
         User user = (User) request.getSession().getAttribute("user");
-        System.out.println("user = " +user);
         
         if (Integer.parseInt(length) <5 || Integer.parseInt(length) >25){
             throw new GeneralException("Length must be between 5 and 25");   
@@ -42,8 +38,6 @@ public class MakeOrder extends Command {
             throw new GeneralException("Height must be between 2 and 25");
         
         Order o = LogicFacade.makeOrder(width, length, height, user);
-        System.out.println("width: "+ width +"\nWidth: " + width +"\nheight: "+ height);
-        System.out.println("++++++++++++++++++" + o);
         request.getSession().setAttribute("order", o);
         return "singleOrder";
     }

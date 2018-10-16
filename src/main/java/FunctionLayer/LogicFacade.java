@@ -25,8 +25,6 @@ public class LogicFacade {
         HashMap<String, Integer> map = b.calculate(width, length, height);
         int id = DataMapper.createOrder(map,user);
         
-        System.out.println(map);
-        System.out.println("------------"+id);
         return new Order(id, map.get("width"), map.get("length"), map.get("height"), map, false);
         
     }

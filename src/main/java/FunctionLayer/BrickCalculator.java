@@ -50,9 +50,6 @@ public class BrickCalculator {
         map.put("total2x4", blockArray[0]);
         map.put("total2x2", blockArray[1]);
         map.put("total2x1", blockArray[2]);
-        System.out.println(map.get("total2x4"));
-        System.out.println(map.get("total2x2"));
-        System.out.println(map.get("total2x1"));
         return map;
     }
 
