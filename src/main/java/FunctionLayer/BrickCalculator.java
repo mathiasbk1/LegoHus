@@ -79,13 +79,13 @@ public class BrickCalculator {
         //count bricks for width side
         arr[0] += (int) widthSide / 4;
         int restwidth = widthSide % 4;
-        if (rest == 1) {
+        if (restwidth == 1) {
             arr[2]++;
         }
-        if (rest == 2) {
+        if (restwidth == 2) {
             arr[1]++;
         }
-        if (rest == 3) {
+        if (restwidth == 3) {
             arr[1]++;
             arr[2]++;
         }
@@ -119,13 +119,13 @@ public class BrickCalculator {
         //count bricks for width side
         arr[0] += (int) widthSide / 4;
         int restwidth = widthSide % 4;
-        if (rest == 1) {
+        if (restwidth == 1) {
             arr[2]++;
         }
-        if (rest == 2) {
+        if (restwidth == 2) {
             arr[1]++;
         }
-        if (rest == 3) {
+        if (restwidth == 3) {
             arr[1]++;
             arr[2]++;
         }
