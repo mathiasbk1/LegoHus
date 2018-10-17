@@ -1,12 +1,13 @@
 package FunctionLayer;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * The purpose of User is to...
  * @author kasper
  */
-public class User {
+public class User implements Serializable{
 
     public User(String email, String password, String role ) {
         this.email = email;

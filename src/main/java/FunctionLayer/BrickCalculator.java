@@ -47,9 +47,9 @@ public class BrickCalculator {
         }
 
 
-        map.put("total2x4", blockArray[0]);
-        map.put("total2x2", blockArray[1]);
-        map.put("total2x1", blockArray[2]);
+        map.put("total2x4", blockArray[0] * 2);
+        map.put("total2x2", blockArray[1] * 2);
+        map.put("total2x1", blockArray[2] * 2);
         return map;
     }
 
